@@ -1,6 +1,8 @@
 <!Doctype HTML>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <title>Vecchio Forno</title>
     <style>
 
@@ -32,7 +34,7 @@
     h2 {
       font-size: 23px;
       margin-bottom: 5px;
-  }
+    }
 
     h3 {
       font-size: 21px;
@@ -49,20 +51,6 @@
       text-align: left;
     }
 
-    .center {
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
-
-  .section {
-    width: 20%;
-    padding: .1%;
-    display: inline-block;
-    vertical-align: top;
-  }
-
     ul {
       margin: 0;;
     }
@@ -74,6 +62,7 @@
 
     img.title {
       width: 65%;
+      padding: 20px;
     }
 
     img.subtitle {
@@ -86,6 +75,81 @@
 
     span.italic {
       font-style: italic;
+      font-weight: bolder;
+    }
+
+    @media (min-width: 800px) {
+
+    .center {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .section {
+      width: 20%;
+      padding: .1%;
+      margin-bottom: 30px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  @media (min-width: 450px) and (max-width: 799px) {
+    h2 {
+      font-size: 20px;
+    }
+
+    img.subtitle {
+      height: 50px;
+    }
+
+    .center {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .section {
+      width: 40%;
+      padding: .1%;
+      margin-bottom: 20px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  @media (max-width: 449px) {
+
+    img.title {
+      width: 99%;
+      padding: 0px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    img.subtitle {
+      height: 40px;
+    }
+
+    .center {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .section {
+      width: 80%;
+      padding: .1%;
+      margin-bottom: 20px;
+      display: block;
+      vertical-align: top;
+    }
     }
 }
     </style>
@@ -93,8 +157,8 @@
 
   <body>
     <div class="center">
-      <img src="logotype_02.png" class="title">
-      <h2 class="first">via San Guelfa, 32 Firenze</h2>
+      <img src="logotype.png" class="title">
+      <h2>via San Guelfa, 32 Firenze</h2>
       <h2 class="first">Il menu del giorno | <span class="italic">14 Febbraio</span></h2>
     </div>
 
