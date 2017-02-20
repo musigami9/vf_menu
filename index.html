@@ -1,30 +1,28 @@
 <!Doctype HTML>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Ruda" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,400,400i,600" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <script src="parallax.min.js"></script>
     <title>Vecchio Forno</title>
     <style>
 
     body {
-      font-family: "Ruda";
-      color: #edcf54;
-      /*letter-spacing: .08em;*/
-      background-color: white;
+      font-family: "Titillium Web";
+      color: #503335;
       margin: 0;
-      background-image: url("bg.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
     }
 
-    img.title {
-      width: 70%;
+    ::selection {
+      color: #392325;
+      background: #edcf54;
     }
 
     h1 {
-      font-size: 27px;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
+      text-align: left;
+      font-weight: 600;
     }
 
     h1.first, h2.first {
@@ -34,227 +32,289 @@
     h2 {
       font-size: 23px;
       margin-bottom: 5px;
+      color: #edcf54;
+      text-align: center;
     }
 
-    h3 {
-      font-size: 21px;
+    p, p.bluh {
+      margin-bottom: 0px;
+    }
+
+    p.description {
+      text-align: left;
+      font-family: 'Titillium Web';
+      font-weight: 300;
+      font-style: italic;
+      margin-left: 10px;
+      margin-top: -1px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0px;
+    }
+
+    li {
+      list-style-type: none;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    span.italic {
+      font-family: 'Titillium Web';
+      font-weight: 200;
+      font-style: italic;
+      margin-right: 2px;
+      float: right;
+    }
+
+    .spacer {
+      width: 100%;
+      height: 20px;
+      display: block
+    }
+
+    .center {
+      overflow: auto;
+    }
+
+    .section {
+      width: 100%;
+      padding: 20px 0px;
+      margin: 0 auto;
+      display: block;
+      vertical-align: top;
+      background: #f4eed2;
+    }
+
+    .parallax-window {
+    	min-height: 400px;
+      width: 100%;
+    	background: transparent;
+    }
+
+
+  @media (min-width: 1500px) {
+
+    .center {
+    width: 1165px;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+    img.small {
+      width: 200px;
+      float: right;
+    }
+}
+
+  @media (min-width: 1000px) and (max-width: 1499px) {
+
+    p.description{
+      font-size: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    .center {
+      width: 805px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+
+    img.title {
+      width: 700px;
+      margin: 20px 92px;
+    }
+  }
+
+  @media (min-width: 440px) and (max-width: 999px) {
+
+    p.description{
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 29px;
+    }
+
+    h2 {
+      font-size: 23px;
+    }
+
+    .center {
+      width: 420px;
+      margin: 0 auto;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img.title {
+      width: 400px;
+      padding-top: 30px;
+      margin: 0 10px;
+    }
+  }
+
+  @media screen and (max-width : 439px) {
+
+    p.description{
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .center {
+      width: 80%;
+      padding: 10%;
     }
 
     p {
       font-size: 17px;
     }
 
-    p.description {
-      font-style: italic;
-      margin-left: 30px;
-      font-size: 15px;
-      text-align: left;
-    }
-
-    ul {
-      margin: 0;;
-    }
-
-    li {
-      list-style-type: none;
-      text-align: left;
-    }
-
     img.title {
-      width: 65%;
-      padding: 20px;
-    }
-
-    img.subtitle {
-      height: 60px;
-    }
-
-    img.small {
-      width: 80%;
-    }
-
-    span.italic {
-      font-style: italic;
-      font-weight: bolder;
-    }
-
-    @media (min-width: 800px) {
-
-    .center {
-      width: 100%;
-      text-align: center;
+      width: 90%;
+      margin-top: 20px;
       margin: 0 auto;
-      margin-bottom: 50px;
-    }
-
-    .section {
-      width: 20%;
-      padding: .1%;
-      margin-bottom: 30px;
-      display: inline-block;
-      vertical-align: top;
     }
   }
-
-  @media (min-width: 450px) and (max-width: 799px) {
-    h2 {
-      font-size: 20px;
-    }
-
-    img.subtitle {
-      height: 50px;
-    }
-
-    .center {
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
-
-    .section {
-      width: 40%;
-      padding: .1%;
-      margin-bottom: 20px;
-      display: inline-block;
-      vertical-align: top;
-    }
-  }
-
-  @media (max-width: 449px) {
-
-    img.title {
-      width: 99%;
-      padding: 0px;
-    }
-
-    h2 {
-      font-size: 18px;
-    }
-
-    img.subtitle {
-      height: 40px;
-    }
-
-    .center {
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
-
-    .section {
-      width: 80%;
-      padding: .1%;
-      margin-bottom: 20px;
-      display: block;
-      vertical-align: top;
-    }
-    }
-}
     </style>
   </head>
 
   <body>
-    <div class="center">
-      <img src="logotype.png" class="title">
-      <h2>via San Guelfa, 32 Firenze</h2>
-      <h2 class="first">Il menu del giorno | <span class="italic">14 Febbraio</span></h2>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="bg.jpg">
+      <div class="center">
+        <img src="logotype.png" class="title">
+        <h2>via San Guelfa, 32 Firenze</h2>
+        <h2 class="first">Il menu del giorno | 14 Febbraio</h2>
+        <div class="spacer"></div>
     </div>
+  </div>
 
-<div class="center">
-    <div class="section">
-      <img src="speciale.png" class="subtitle">
-      <img src="pizza.png" class="small">
-      <h1 class="first">Pizza romana</h1>
-      <p class="description">Pomodoro, mozzarella, capperi e acciuga</p>
-    </div>
-
-      <div class="section">
-        <img src="pane.png" class="subtitle">
-          <ul>
-            <li>
-              <p>Siciliano| <span class="italic">€2 per pezzo</span></p>
-            </li>
-            <li>
-              <p>Ciabatta | <span class="italic">€2.50 per pezzo</span></p>
-            </li>
-            <li>
-              <p>Cornetto | <span class="italic">€2 per pezzo</span></p>
-            </li>
-            <li>
-              <p>Casareccio | <span class="italic">€3 per pezzo</span></p>
-            </li>
-            <li>
-              <p>Ciambella | <span class="italic">€2 per pezzo</span></p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <img src="pasticceria.png" class="subtitle">
-            <ul>
-              <li>
-                <p>Pan di ramerino | <span class="italic">€1</span></p>
-              </li>
-              <li>
-                <p>Tortine | <span class="italic">€1.50</span></p>
-              </li>
-              <li>
-                <p>Chiacchiere | <span class="italic">€2</span></p>
-                <p class="description">Pasta fritta con zucchero a velo</p>
-              </li>
-              <li>
-                <p>Brioches ai cereali | <span class="italic">€1</span></p>
-              </li>
-              <li>
-                <p>Sfoglie di crema e frutta | <span class="italic">€2</span></p>
-              </li>
-              <li>
-                <p>Fagotto pera e nutella | <span class="italic">€2</span></p>
-              </li>
-              <li>
-                <p>Torta di pere e cioccolato | <span class="italic">€1</span></p>
-              </li>
-              <li>
-                <p>Budino di riso | <span class="italic">€1</span></p>
-              </li>
-            </ul>
+    <!-- <div class="section">
+      <div class="center">
+        <div class="left">
+          <h1>Speciale di Oggi</h1>
+          <p class="bluh">Pizza romana <span class="italic">€4</span></h1>
+            <p>Pomodoro, mozzarella, capperi e acciuga</p>
           </div>
+        <img src="pizza.png" class="small">
+        <div class="spacer"></div>
+    </div>
+  </div> -->
 
-      <div class="section">
-        <img src="pranzo.png" class="subtitle">
-          <ul>
-            <li>
-              <p>Panino crudo di Parma, crema di formaggi e piselli | <span class="italic">€4</span></p>
-            </li>
-            <li>
-              <p>Panino crudo di Parma, crema di formaggi e funghi | <span class="italic">€4</span></p>
-            </li>
-            <li>
-              <p>Panino prosciutoo arrosto stracciatella e pesto | <span class="italic">€4</span></p>
-            </li>
-            <li>
-              <p>Panino rustico cotto e fontina | <span class="italic">€2.50</span></p>
-            </li>
-            <li>
-              <p>Panino integrali tonde | <span class="italic">€4</span></p>
-            </li>
-            <li>
-              <p>Panino salame spagnolog e scamortza | <span class="italic">€4</span></p>
-            </li>
-            <li>
-              <p>Pizza con prosciuto  e salsiccia piccante | <span class="italic">€2.50</span></p>
-            </li>
-            <li>
-              <p>Pizza Quattro Stagione | <span class="italic">€2.50</span></p>
-              <p class="description"> Carciofi, pomodori basilico, funghi e prosciutto e olive</p>
-            </li>
-            <li>
-              <p>Pizza Magherita | <span class="italic">€2.50</span></p>
-              <p class="description"> Pomodoro e mozzarella</p>
-            </li>
-          </ul>
-        </div>
-</div>
+  <div class="section">
+    <div class="center">
+    <h1>Pane</h1>
+      <ul>
+        <li>
+          <p>Sicilia <span class="italic">€2 per pezzo</span></p>
+        </li>
+        <li>
+          <p>Ciabatta <span class="italic">€2.50 per pezzo</span></p>
+        </li>
+        <li>
+          <p>Cornetto <span class="italic">€2 per pezzo</span></p>
+        </li>
+        <li>
+          <p>Casareccio <span class="italic">€3 per pezzo</span></p>
+        </li>
+        <li>
+          <p>Ciambella <span class="italic">€2 per pezzo</span></p>
+        </li>
+      </ul>
+      <div class="spacer"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="center">
+      <h1>Pasticceria</h1>
+        <ul>
+          <li>
+            <p>Pan di ramerino <span class="italic">€1</span></p>
+          </li>
+          <li>
+            <p>Tortine <span class="italic">€1.50</span></p>
+          </li>
+          <li>
+            <p>Chiacchiere <span class="italic">€2</span></p>
+            <p class="description"> Pasta fritta con zucchero a velo</p>
+          </li>
+          <li>
+            <p>Brioches ai cereali <span class="italic">€1</span></p>
+          </li>
+          <li>
+            <p>Sfoglie di crema e frutta <span class="italic">€2</span></p>
+          </li>
+          <li>
+            <p>Fagotto pera e nutella <span class="italic">€2</span></p>
+          </li>
+          <li>
+            <p>Torta di pere e cioccolato <span class="italic">€1</span></p>
+          </li>
+          <li>
+            <p>Budino di riso <span class="italic">€1</span></p>
+          </li>
+        </ul>
+        <div class="spacer"></div>
+      </div>
+    </div>
+
+  <div class="section">
+    <div class="center">
+      <h1>Pranzo</h1>
+        <ul>
+          <li>
+            <p>Panino crudo di Parma, crema di formaggi e piselli <span class="italic">€4</span></p>
+          </li>
+          <li>
+            <p>Panino crudo di Parma, crema di formaggi e funghi <span class="italic">€4</span></p>
+          </li>
+          <li>
+            <p>Panino prosciuto arrosto, stracciatella e pesto <span class="italic">€4</span></p>
+          </li>
+          <li>
+            <p>Panino rustico cotto e fontina <span class="italic">€2.50</span></p>
+          </li>
+          <li>
+            <p>Panino integrali tonde <span class="italic">€4</span></p>
+          </li>
+          <li>
+            <p>Panino salame spagnolo e scamortza <span class="italic">€4</span></p>
+          </li>
+          <li>
+            <p>Pizza con prosciuto e salsiccia piccante <span class="italic">€2.50</span></p>
+          </li>
+          <li>
+            <p>Pizza Quattro Stagione <span class="italic">€2.50</span></p>
+            <p class="description"> Carciofi, pomodori basilico, funghi e prosciutto e olive</p>
+          </li>
+          <li>
+            <p>Pizza Magherita <span class="italic">€2.50</span></p>
+            <p class="description"> Pomodoro e mozzarella</p>
+          </li>
+        </ul>
+        <div class="spacer"></div>
+      </div>
+    </div>
   </body>
